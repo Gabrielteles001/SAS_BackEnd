@@ -4,6 +4,45 @@
 
 Em construção...</p>
 
+# 📌 Requisitos Funcionais da Aplicação
+**Parte do Paciente:**
+  - Cadastro de pacientes;
+  - Login de pacientes;
+  - Redefinição de senha;
+  - Agendamento de consultas, permitindo que o paciente escolha o melhor horário, especialidade médica e localidade;
+  - Agendamento de exames, permitindo que o paciente escolha o melhor horário e localidade para realização;
+  - Visualização de resultados de consultas, exames, laudos médicos e imagens relacionadas;
+  - Acesso ao próprio prontuário;
+  - Consulta de CPF de pacientes cadastrados, exibindo uma tabela com informações relevantes;
+  - Atualização de dados pessoais.
+
+**Parte do Profissional de Saúde:**
+  - Login de profissionais de saúde;
+  - Redefinição de senha;
+  - Atualização de dados pessoais;
+  - Acesso ao prontuário dos pacientes;
+  - Consulta de CPF de pacientes cadastrados, exibindo uma tabela com informações relevantes.
+
+**Funcionalidades restritas a médicos:**
+  - Prescrição de medicamentos para pacientes;
+  - Adição de documentos para pacientes, como por exemplo, atestados;
+  - Registro de anamnese do paciente;
+  - Solicitação de exames.
+
+**Parte das Unidades de Saúde:**
+  - Cadastro de Unidades Básicas de Saúde, clínicas e hospitais;
+  - Gestão do cadastro de seus profissionais de saúde;
+  - Login da unidade de saúde;
+  - Redefinição de senha;
+  - Atualização dos dados institucionais da unidade de saúde.
+
+# 📌 Requisitos Não funcionais da Aplicação:
+  - Desempenho: Respostas rápidas em operações de agendamento, exames e entre outras.
+  - Segurança: Proteção de dados conforme LGPD.
+  - Usabilidade: Interface intuitiva e acessível.
+  - Disponibilidade: Autenticação e redefinição de senha.
+  - Integrações: Suporte a APIs de terceiros.
+
 # 🚀 Tecnologias Utilizadas
 - Frontend: HTML,CSS, Javascript React
 - Backend: Java (Spring Boot)
@@ -161,7 +200,7 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
 # 🎯 Passos para rodar o projeto🔹Backend (Java)
 # Clone o repositório
 ```git
-git clone https://github.com/DGuabiraba/SAAS
+git clone https://github.com/SAS-Organizacao/SAS_BackEnd.git
 ```
 
 # 🛠️ Endpoints da API
@@ -201,11 +240,6 @@ git clone https://github.com/DGuabiraba/SAAS
       </a>
     </td>
     <td>
-      <a href="https://github.com/Rodrigo-jsx">
-        <img src="https://avatars.githubusercontent.com/u/87452180?v=4" height="200px" width="200px">
-      </a>
-    </td>
-    <td>
       <a href="https://github.com/dorotrodrigues">
         <img src="https://avatars.githubusercontent.com/u/111395320?v=4" height="200px" width="200px">
       </a>
@@ -218,11 +252,6 @@ git clone https://github.com/DGuabiraba/SAAS
     <td>
       <a href="https://github.com/CeloDigital">
         <img src="https://avatars.githubusercontent.com/u/147448840?v=4" height="200px" width="200px">
-      </a>
-    </td>
-     <td>
-      <a href="https://github.com/camillyfaria">
-        <img src="https://avatars.githubusercontent.com/u/118902592?v=4" height="200px" width="200px">
       </a>
     </td>
      <td>
