@@ -9,7 +9,146 @@ Em construção...</p>
 - Backend: Java (Spring Boot)
 - Banco de Dados: MySQL
 - Notificações: SMS/WhatsApp
-- Docker 
+- Docker
+
+# 📑 Modelo Entidade de Relacionamento (EER)
+
+```mermaid
+erDiagram
+    paciente {
+        BINARY id_paciente
+        STRING nome
+        STRING cpf
+        STRING email
+        STRING senha
+        DATE data_nascimento
+        ENUM genero
+        STRING telefone
+        STRING grau_instrucao
+        BOOLEAN notificacoes_ativadas
+    }
+
+    unidade_de_saude {
+        BINARY id_unidade_de_saude
+        STRING nome
+        STRING profissao
+        ENUM tipo
+        STRING cnpj
+        STRING registro_sanitario
+        TEXT descricao
+    }
+
+    profissional_de_saude {
+        BINARY id_profissional_de_saude
+        STRING nome
+        STRING cpf
+        STRING email
+        STRING telefone
+        STRING codigo_acesso
+        STRING senha_hash
+        BINARY unidade_de_saude_id
+    }
+
+    agendamento {
+        BINARY id_agendamento
+        DATETIME data_hora
+        BINARY paciente_id
+        BINARY profissional_id
+        BINARY unidade_de_saude_id
+        ENUM status
+    }
+
+    exame {
+        BINARY id_exame
+        TEXT descricao
+        ENUM status
+        BINARY paciente_id
+        BINARY profissional_id
+        BINARY agendamento_id
+    }
+
+    resultado_exame {
+        BINARY id_resultado
+        BINARY exame_id
+        BLOB resultado
+        TIMESTAMP data_resultado
+    }
+
+    prontuario {
+        BINARY id_prontuario
+        BINARY paciente_id
+        BINARY profissional_id
+        TEXT descricao
+        TEXT alergia
+        ENUM tipo_sanguineo
+        TEXT doenca_cronica
+        TIMESTAMP ultima_atualizacao
+    }
+
+    medicamento {
+        INT id_medicamento
+        STRING nome
+        BINARY paciente_id
+        BINARY profissional_id
+        BINARY agendamento_id
+    }
+
+    notificacao {
+        BINARY id_notificacao
+        BINARY paciente_id
+        ENUM tipo
+        DATETIME data_envio
+        ENUM status
+    }
+
+    endereco {
+        BINARY id_endereco
+        STRING rua
+        STRING numero
+        STRING bairro
+        STRING cidade
+        STRING uf
+        STRING cep
+        BINARY paciente_id
+        BINARY unidade_de_saude_id
+    }
+
+    log_acesso {
+        BINARY id_log
+        BINARY profissional_id
+        BINARY paciente_id
+        TIMESTAMP data_hora
+        ENUM acao
+    }
+
+    disponibilidade {
+        BINARY id_disponibilidade
+        BINARY profissional_id
+        BINARY unidade_de_saude_id
+        ENUM dia_semana
+        TIME horario_inicio
+        TIME horario_fim
+    }
+
+    paciente ||--o{ agendamento : "faz"
+    paciente ||--o{ exame : "realiza"
+    paciente ||--o{ prontuario : "possui"
+    paciente ||--o{ notificacao : "recebe"
+    paciente ||--o{ endereco : "possui"
+    paciente ||--o{ medicamento : "usa"
+    profissional_de_saude ||--o{ agendamento : "atende"
+    profissional_de_saude ||--o{ exame : "realiza"
+    profissional_de_saude ||--o{ prontuario : "atualiza"
+    profissional_de_saude ||--o{ log_acesso : "registra"
+    profissional_de_saude ||--o{ disponibilidade : "tem"
+    unidade_de_saude ||--o{ profissional_de_saude : "contrata"
+    unidade_de_saude ||--o{ agendamento : "recebe"
+    unidade_de_saude ||--o{ endereco : "possui"
+    exame ||--o{ resultado_exame : "gera"
+    agendamento ||--o{ exame : "agenda"
+    agendamento ||--o{ medicamento : "prescreve"
+
+```
 
 # 📦 Instalação e Configuração
 🔧 Pré-requisitos
