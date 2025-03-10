@@ -206,11 +206,6 @@ git clone https://github.com/DGuabiraba/SAAS
       </a>
     </td>
     <td>
-      <a href="https://github.com/dorotrodrigues">
-        <img src="https://avatars.githubusercontent.com/u/111395320?v=4" height="200px" width="200px">
-      </a>
-    </td>
-    <td>
       <a href="https://github.com/alvesrafaelaa">
         <img src="https://avatars.githubusercontent.com/u/192259118?v=4" height="200px" width="200px">
       </a>
@@ -218,11 +213,6 @@ git clone https://github.com/DGuabiraba/SAAS
     <td>
       <a href="https://github.com/CeloDigital">
         <img src="https://avatars.githubusercontent.com/u/147448840?v=4" height="200px" width="200px">
-      </a>
-    </td>
-     <td>
-      <a href="https://github.com/camillyfaria">
-        <img src="https://avatars.githubusercontent.com/u/118902592?v=4" height="200px" width="200px">
       </a>
     </td>
      <td>
