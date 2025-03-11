@@ -1,11 +1,18 @@
-# 📌 Sistema de Agendamento de Atendimento de Saúde
+# 📌 Sistema de Agendamento a Saúde
 
-<p> Somos a SAAS (Sistema de Agendamento de Atendimento de Saúde), uma startup de tecnologia focada em soluções digitais para a área da saúde. Nosso objetivo é simplificar o agendamento e o atendimento médico, oferecendo praticidade para pacientes e eficiência para profissionais da saúde.
+<p> Somos a SAS (Sistema de Agendamento de Saúde), uma startup de tecnologia dedicada a transformar a experiência na área da saúde por meio de soluções digitais inovadoras. Nosso propósito é simplificar e agilizar o agendamento e o atendimento médico, proporcionando praticidade para os pacientes e eficiência para os profissionais da saúde.
 
-Em construção...</p>
+<b>Praticidade para Pacientes:</b> Agendamento rápido, acesso a prontuários digitais e informações centralizadas.
+
+<b>Eficiência para Profissionais:</b> Gestão simplificada de consultas, integração de históricos médicos e otimização de processos.
+
+<b>Inovação Contínua:</b> Soluções personalizadas e atualizadas para atender às necessidades do setor de saúde.
+
+ Na SAS, acreditamos que a tecnologia pode ser uma grande aliada para melhorar a saúde e o bem-estar da sociedade.
+
 
 # 🚀 Tecnologias Utilizadas
-- Frontend: HTML,CSS, Javascript React
+- Frontend: HTML,CSS, Javascript e React.js
 - Backend: Java (Spring Boot)
 - Banco de Dados: MySQL
 - Notificações: SMS/WhatsApp
@@ -157,14 +164,17 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
 - Java JDK 21
 - MySQL
 - Docker
+- React.js
 
 # 🎯 Passos para rodar o projeto🔹Backend (Java)
-# Clone o repositório
+# 🔗 Clone o repositório
 ```git
-git clone https://github.com/DGuabiraba/SAAS
+git clone https://github.com/SAS-Organizacao/SAS_BackEnd
 ```
 
 # 🛠️ Endpoints da API
+<p>Em construção...</p>
+
 # 📌 Autenticação
 <p>Em construção...</p>
 
@@ -175,7 +185,11 @@ git clone https://github.com/DGuabiraba/SAAS
 <p>Em construção...</p>
 
 
-📩 Contato📧 Email: SAAS@gmail.com
+# 📌 Contato
+
+📧Email: sas@gmail.com
+
+🌐Site: www.sas.com.br
 
 # Integrantes
 </tr>
